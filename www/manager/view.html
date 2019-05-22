@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ArtistAndYou</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <meta http-equiv="Access-Control-Allow-Origin" content="*">
+        <title>Listview - jQuery Mobile Demos</title>
+        <link rel="shortcut icon" href="../jquery.mobile/images/favicon.ico">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+        <link rel="stylesheet" href="../css/themes/default/jquery.mobile-1.4.5.min.css">
+        <script src="../js/jquery.js"></script>
+        <script src="../js/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript" src="../js/event.js"></script>
+    </head>
+    <body>
+        <div data-role="page" id="listpage" data-quicklinks="true" style="background-color:white;">
+            <div data-role="header" style="background-color:red;color:white;">
+                <h1>View Events</h1>
+            </div>
+            <!-- /header -->
+            <button type="button" style="background-color:rgb(45, 13, 133);color:white;" onclick="myFunction()">View</button>
+            <label></label>
+            <button onclick="backEvent()" style="background-color:rgb(45, 13, 133);color:white;">Back</button>
+            <div role="main" class="ui-content">
+                <h2>Recent Events</h2>
+                <div data-demo-html="true">
+                    <ul data-role="listview" id="newslist">
+                        <li>Loading events</li>
+                    </ul>
+                </div>
+            </div>
+             <div data-role="footer" data-position="fixed" style="background-color:red;color:white;">
+                        <h2>Created by ABC</h2>
+                        
+                </div>
+        </div>
+        <div data-role="page" id="update" >
+            <div data-role="header" style="background-color:red;color:white;">
+                <h2>Update</h2>
+                
+            </div>
+            <div data-role="main">
+                
+                <form id="userForm">
+                    <div class="ui-field-contain">
+                        <label for="txtName">EventId:</label>
+                        <input type="text" name="eventId" id="eventId" data-clear-btn="true"/>
+                        <label for="txtName">Eventname:</label>
+                        <input type="text" name="eventName" id="eventName" data-clear-btn="true"/>
+                        <label for="txtQuantity">EventLocation:</label>
+                        <input type="text" name="eventLocation" id="eventLocation" data-clear-btn="true"/>
+                        <label for="txtName">Event Description</label>
+                        <input type="text" name="eventDes" id="eventDes" data-clear-btn="true"/>
+                        <label for="txtName">Event Date</label>
+                        <input type="date" name="eventDate" id="eventDate" data-clear-btn="true"/>
+                        <label for="txtName">Event Price</label>
+                        <input type="Number" name="eventPrice" id="eventPrice" data-clear-btn="true"/>
+                        <label></label>
+                        <input type="submit" name="submit" style="background-color:blueviolet;color:white;" onclick="Update()" value="Update">
+                        
+                    </form>
+                    
+                </div>
+                 <div data-role="footer" data-position="fixed" style="background-color:red;color:white;">
+                        <h2>Created by ABC</h2>
+                        
+                </div>
+                
+            </div>
+            <!-- ------------------for delete page--------------- -->
+            <div data-role="page" id="delete">
+                <div data-role="header">
+                    <h2>Delete</h2>
+                    
+                </div>
+                <div data-role="main">
+                    
+                    <form id="userForm">
+                        <div class="ui-field-contain">
+                            <label for="txtName">EventId:</label>
+                            <input type="text" name="eventId" id="eventId" data-clear-btn="true"/>
+                            
+                            <label></label>
+                            <input type="submit" name="submit" onclick="Delete()" value="Delete">
+                            
+                        </form>
+                        
+                    </div>
+                    
+                </div>
+                
+            </body>
+        </html>

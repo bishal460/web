@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ArtistAndYou</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <meta http-equiv="Access-Control-Allow-Origin" content="*">
+        <title>Listview - jQuery Mobile Demos</title>
+        <link rel="shortcut icon" href="../jquery.mobile/images/favicon.ico">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+        <link rel="stylesheet" href="../css/themes/default/jquery.mobile-1.4.5.min.css">
+        <script src="../js/jquery.js"></script>
+        <script src="../js/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript" src="../js/event.js"></script>
+    </head>
+    <body>
+        <div data-role="page" style="background-color:white;">
+            <div data-role="header" style="background-color:red;color:white;">
+                <h2>Add Events</h2>
+            </div>
+            <div data-role="main" class="ui-content">
+                <form id="userForm">
+                    <div class="ui-field-contain">
+                        <label for="txtName">Event Name</label>
+                        <input type="text" name="eventName" id="eventName" data-clear-btn="true"/>
+                        <label for="txtQuantity">Event Location</label>
+                        <input type="text" name="eventLocation" id="eventLocation" data-clear-btn="true"/>
+                        <label for="txtName">Event Description</label>
+                        <input type="text" name="eventDes" id="eventName" data-clear-btn="true"/>
+                        <label for="txtName">Event Date</label>
+                        <input type="date" name="eventDate" id="eventName" data-clear-btn="true"/>
+                        <label for="txtName">Event Price</label>
+                        <input type="Number" name="eventPrice" id="eventName" data-clear-btn="true"/>
+                        <label ></label>
+                        <input type="submit" name="submit" style="background-color:blueviolet;color:white;" onclick="add()" value="submit">
+                        <label></label>
+                        <input type="submit" name="view"  style="background-color:blueviolet;color:white;" onclick="viewEvent()" value="view">
+                        <label></label>
+                        <input type="submit" name="view"  style="background-color:blueviolet;color:white;" onclick="Logout()" value="Logout">
+                    </div>
+                </form>
+            </div>
+
+            <div data-role="footer" data-position="fixed" style="background-color:red;color:white;">
+                        <h2>Created by ABC</h2>
+                        
+                </div>
+                
+        </div>
+    </body>
+</html>

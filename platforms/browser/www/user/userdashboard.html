@@ -1,0 +1,90 @@
+    <!DOCTYPE html>
+<html>
+<head>
+	<title>ArtistAndYou</title>
+	<meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <meta http-equiv="Access-Control-Allow-Origin" content="*">
+        <title>Listview - jQuery Mobile Demos</title>
+        <link rel="shortcut icon" href="../jquery.mobile/images/favicon.ico">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+        <link rel="stylesheet" href="../css/themes/default/jquery.mobile-1.4.5.min.css">
+        <script src="../js/jquery.js"></script>
+        <script src="../js/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript" src="../js/user.js"></script>
+</head>
+<body>
+        <div data-role="page" id="listpage" data-quicklinks="true" style="background-color:white;">
+            <div data-role="header" style="background-color:red;color:white;">
+                <h1>View Events</h1>
+            </div>
+            <!-- /header -->
+            <button type="button"  style="background-color:rgb(45, 13, 133);color:white;"  onclick="myFunction()">View</button>
+            <label></label>
+            <button type="button"   style="background-color:rgb(45, 13, 133);color:white;" onclick="Logout()">Logout</button>
+            <label></label>
+            <!-- <button onclick="backEvent()">Back</button> -->
+            <div role="main" class="ui-content">
+                <h2>Recent Events</h2>
+                <div data-demo-html="true">
+                    <ul data-role="listview" id="newslist">
+                        <li>Loading Events</li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role="footer" data-position="fixed" style="background-color:red;color:white;">
+                        <h2>Created by ABC</h2>
+                        
+                </div>
+                
+        </div>
+        <!-- ----------------boking--------------------- -->
+        <div data-role="page" id="book">
+            <div data-role="header" style="background-color:red;color:white;">
+                <h2>Book here</h2>
+                
+            </div>
+
+            <div data-role="main" class="ui-content">
+                
+                <form id="userForm">
+                <div class="ui-field-contain">
+
+                        <label for="txtName">EventId:</label>
+                <input type="text" name="eventId" id="eventId" data-clear-btn="true"/>
+
+                <label for="txtName">Event Name</label>
+                <input type="text" name="eventName" id="eventName" data-clear-btn="true"/>
+                <label for="txtQuantity">Event Location</label>
+                <input type="text" name="eventLocation" id="eventLocation" data-clear-btn="true"/>
+
+                <label for="txtName">No Of Ticket:</label>
+                <input type="number" name="nTicket" id="nTicket" data-clear-btn="true"/>
+            
+
+
+                <label ></label>
+                <input type="submit" name="submit" style="background-color:rgb(45, 13, 133);color:white;" onclick="book()" value="Book">
+
+                
+
+                
+               
+            </div>
+        </form>
+                    
+                
+                
+            </div>
+
+
+<div data-role="footer" data-position="fixed" style="background-color:red;color:white;">
+                        <h2>Created by ABC</h2>
+                        
+                </div>
+                            
+        </div>
+
+        
+</body>
+</html>

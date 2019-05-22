@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ArtistAndYou</title>
+	<meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <meta http-equiv="Access-Control-Allow-Origin" content="*">
+        <title>Listview - jQuery Mobile Demos</title>
+        <link rel="shortcut icon" href="../jquery.mobile/images/favicon.ico">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+        <link rel="stylesheet" href="../css/themes/default/jquery.mobile-1.4.5.min.css">
+        <script src="../js/jquery.js"></script>
+        <script src="../js/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript" src="../js/user.js"></script>
+</head>
+<body>
+        <div data-role="page" id="login" style="background-color:white;">
+               <div data-role="header" data-position="fixed" style="background-color:red;color:white;">
+                         <h1 style=" font-family: 'Times New Roman', Times, serif;font-size: 20px;"> Sign Up</h1>
+                </div>
+                <div data-role="main" class="ui-content">
+        <form id="userForm">
+            
+            <div class="ui-field-contain">
+                <label for="txtName">User Name</label>
+                <input type="text" name="username"  data-clear-btn="true"/>
+
+                 <label for="txtName">Address</label>
+                <input type="text" name="useraddress"  data-clear-btn="true"/>
+
+                 <label for="txtName">Phone No</label>
+                <input type="text" name="userphn"  data-clear-btn="true"/>
+
+                <label for="txtName">User Email</label>
+                <input type="text" name="useremail"  data-clear-btn="true"/>
+
+                <label for="txtName">User Password</label>
+                <input type="password" name="userpassword"  data-clear-btn="true"/>
+
+                <label for="txtName">Type:</label>
+                <select name="type">
+                <option value="-1">Choose</option>
+                <option value="manager">Manager</option>
+                <option value="user">User</option>
+
+                </select>
+
+              
+                <input type="submit" name="submit" onclick="userRegister()"  value="Register">
+                <a class="ui-btn ui-icon-back ui-btn-icon-left"
+                    onclick="backLogin()"  >Go Back</a>
+            </div>
+        </form>
+    </div>
+                <div data-role="footer" data-position="fixed" style="background-color:red;color:white;">
+                        <h2>Created by ABC</h2>
+                        
+                </div>
+                
+        </div>
+        
+</body>
+</html>

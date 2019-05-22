@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ArtistAndYou</title>
+    <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <meta http-equiv="Access-Control-Allow-Origin" content="*">
+        <title>Listview - jQuery Mobile Demos</title>
+        <link rel="shortcut icon" href="jquery.mobile/images/favicon.ico">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+        <link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.5.min.css">
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript" src="js/user.js"></script>
+</head>
+<body>
+        <div data-role="page" id="login" style="background-color:white;">
+                <div data-role="header" data-position="fixed" style="background-color:red;color:white;">
+                         <h1 style=" font-family: 'Times New Roman', Times, serif;font-size: 20px;"> ArtistAndYou!</h1>
+                </div>
+                <div data-role="main" class="ui-content">
+                    <h3 style="text-align:center;"> Log In</h3>
+                        <form id="userForm">
+                                <label>Email</label>
+                                <input type="email" name="userEmail" id="userEmail" required>
+
+                                <label>Password</label>
+                                <input type="password" name="userPassword" id="userPassword" required>
+
+                                <label></label>
+                                
+                                <label></label>
+                                  <button type="button" style="background-color:red;color:white;"  onclick="Login();">Login</button>
+                                 
+
+                    <label></label>
+                                 <a class="ui-btn ui-icon-user ui-btn-icon-left" style="background-color:red;color:white;"
+                    onclick="Register()">Register</a>
+
+
+                        </form>
+                        
+                </div>
+                <div data-role="footer" data-position="fixed" style="background-color:red;color:white;">
+                        <h2>Created by ABC</h2>
+                        
+                </div>
+                
+        </div>
+        
+</body>
+</html>
